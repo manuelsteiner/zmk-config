@@ -12,8 +12,8 @@
 
 / {
     behaviors {
-        ht: hold_tap {
-            compatible = "zmk,behavior-hold-tap";
+        &lt {
+            compatible = "zmk,behavior-layer-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
@@ -21,8 +21,8 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-
-        lt: layer_tap {
+        
+        ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
