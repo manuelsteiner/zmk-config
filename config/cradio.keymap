@@ -22,6 +22,16 @@
             bindings = <&kp>, <&kp>;
         };
 
+        lt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <150>;
+            require-prior-idle-ms = <100>;
+            bindings = <&kp>, <&kp>;
+        };
+
         hml: hml {
             compatible = "zmk,behavior-hold-tap";
             label = "HML";
