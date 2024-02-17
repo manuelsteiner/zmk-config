@@ -11,13 +11,9 @@
 //define HRMR(k1,k2,k3,k4) &ht RGUI k1  &ht RALT k2  &ht RCTRL k3  &ht RSHFT k4
 
 &lt {
-    compatible = "zmk,behavior-layer-tap";
-    #binding-cells = <2>;
-    flavor = "tap-preferred";
     tapping-term-ms = <200>;
     quick-tap-ms = <150>;
     require-prior-idle-ms = <100>;
-    bindings = <&kp>, <&kp>;
 };
 
 / {
